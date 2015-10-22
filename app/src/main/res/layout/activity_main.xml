@@ -12,7 +12,7 @@
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:src="@drawable/picture1"
-        />
+        android:layout_alignParentBottom="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
         android:layout_alignStart="@+id/button16" />
     <View
         android:layout_width="wrap_content"
-        android:layout_height="0.5dp"
+        android:layout_height="1dp"
         android:id="@+id/viEw1"
         android:visibility="visible"
         android:background="@android:color/black"
@@ -39,8 +39,9 @@
         android:layout_height="wrap_content"
         android:text="@string/q"
         android:id="@+id/button16"
+        android:background="#A52A2A"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="#A52A2A" />
+        android:layout_marginBottom="15dp" />
 
 </RelativeLayout>
