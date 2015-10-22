@@ -20,5 +20,6 @@
     <string name="q">Quit</string>
     <string name="b">Back</string>
     <string name="la">Look At Camera</string>
+    <string name="o">Open Garage</string>
 
 </resources>

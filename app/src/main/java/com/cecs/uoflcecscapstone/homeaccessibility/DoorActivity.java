@@ -17,6 +17,7 @@ public class DoorActivity extends Activity implements View.OnClickListener{
     Button b6=null;
     Button b7=null;
     Button b8=null;
+    Button b9=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +37,10 @@ public class DoorActivity extends Activity implements View.OnClickListener{
         b6.setOnClickListener(this);
         b7=(Button) findViewById(R.id.button15);
         b7.setOnClickListener(this);
-        b8=(Button) findViewById(R.id.button20);
+        b8=(Button) findViewById(R.id.button21);
         b8.setOnClickListener(this);
+        b9=(Button) findViewById(R.id.button20);
+        b9.setOnClickListener(this);
     }
 
     public void onClick(View v) {
@@ -60,6 +63,9 @@ public class DoorActivity extends Activity implements View.OnClickListener{
         {
         }
         else if(v==b7)
+        {
+        }
+        else if(v==b8)
         {
         }
         else
