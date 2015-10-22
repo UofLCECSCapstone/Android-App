@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Home Accessibility</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="s">Start</string>
+    <string name="l">Lights</string>
+    <string name="c">Camera</string>
+    <string name="d">Doors</string>
+    <string name="gl">Get Light Status</string>
+    <string name="lon">Light On</string>
+    <string name="lof">Light Off</string>
+    <string name="gd">Get Door Status</string>
+    <string name="od1">Open Door 1</string>
+    <string name="cd1">Close Door 1</string>
+    <string name="od2">Open Door 2</string>
+    <string name="cd2">Close Door 2</string>
+    <string name="od3">Open Door 3</string>
+    <string name="cd3">Close Door 3</string>
+    <string name="q">Quit</string>
+    <string name="b">Back</string>
+    <string name="la">Look At Camera</string>
+
+</resources>
