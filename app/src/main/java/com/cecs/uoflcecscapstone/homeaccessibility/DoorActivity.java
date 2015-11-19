@@ -44,33 +44,68 @@ public class DoorActivity extends Activity implements View.OnClickListener{
     }
 
     public void onClick(View v) {
-        if(v==b1)
+        switch (v.getId())
         {
+            case R.id.button10:
+            {
+                //door 1 open
+                String door = "Open door1";
+                new openDoorClick().execute();
+                break;
+            }
+
+            case R.id.button9:
+            {
+                // second open
+                String door = "Open door2";
+                break;
+            }
+
+            case R.id.button11:
+            {
+                // third open
+                String door = "Open door3";
+                break;
+            }
+
+            case R.id.button13:
+            {
+                // first close
+                break;
+            }
+
+            case R.id.button14:
+            {
+                // second close
+                break;
+            }
+
+            case R.id.button15:
+            {
+                // third close
+                break;
+            }
+
+            case R.id.button21:
+            {
+                // open garage
+                break;
+            }
+
+            case R.id.button12:
+            {
+                // get door status
+                break;
+            }
+
+            case R.id.button20:
+            {
+                // back
+                break;
+            }
+
+
         }
-        else if(v==b2)
-        {
-        }
-        if(v==b3)
-        {
-        }
-        else if(v==b4)
-        {
-        }
-        if(v==b5)
-        {
-        }
-        else if(v==b6)
-        {
-        }
-        else if(v==b7)
-        {
-        }
-        else if(v==b8)
-        {
-        }
-        else
-        {
-            finish();
-        }
+
     }
 }
