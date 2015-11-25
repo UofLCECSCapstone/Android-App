@@ -3,6 +3,7 @@ package com.cecs.uoflcecscapstone.homeaccessibility;
 /**
  * Created by Drew on 11/18/2015.
  */
+
 import android.os.AsyncTask;
 
 import org.apache.http.HttpResponse;
@@ -26,6 +27,7 @@ import java.util.List;
  */
 public class openDoorClick extends AsyncTask<String, Void, String>
 {
+    static String ch;
     @Override
     protected String doInBackground(String... params)
     {
@@ -33,11 +35,10 @@ public class openDoorClick extends AsyncTask<String, Void, String>
         String str = "";
         // Create a new HttpClient and Post Header
         HttpClient httpclient = new DefaultHttpClient();
-        HttpPost httppost = new HttpPost("192.168.1.84:8050/open_door");
+        HttpPost httppost = new HttpPost("https://192.168.1.84:8080/open_door?door_number=1");
 
         try
-        {
-            // Add your data
+        { // Add your data
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
             nameValuePairs.add(new BasicNameValuePair("Open","Door1"));
             httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
@@ -50,6 +51,8 @@ public class openDoorClick extends AsyncTask<String, Void, String>
             {
                 result = EntityUtils.toByteArray(response.getEntity());
                 str = new String(result, "UTF-8");
+                ch=str;
+
             }
         } catch (ClientProtocolException e)
         {

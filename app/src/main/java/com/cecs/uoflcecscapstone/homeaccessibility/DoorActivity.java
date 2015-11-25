@@ -1,9 +1,11 @@
 package com.cecs.uoflcecscapstone.homeaccessibility;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 /**
  * Created by Drew on 10/20/2015.
@@ -50,7 +52,15 @@ public class DoorActivity extends Activity implements View.OnClickListener{
             {
                 //door 1 open
                 String door = "Open door1";
+                String s;
                 new openDoorClick().execute();
+                s=openDoorClick.ch;
+                Context context = getApplicationContext();
+
+                int duration = Toast.LENGTH_LONG;
+
+                Toast toast = Toast.makeText(context, s, duration);
+                toast.show();
                 break;
             }
 
