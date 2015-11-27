@@ -24,7 +24,8 @@
         </activity>
         <activity android:name=".DoorActivity">
         </activity>
-
+        <activity android:name=".StatusActivity">
+        </activity>
     </application>
 
 </manifest>

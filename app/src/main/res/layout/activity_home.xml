@@ -18,7 +18,7 @@
         android:text="@string/c"
         android:id="@+id/button3"
         android:background="#ff9100"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="150dp"
         android:layout_below="@+id/button2"
         android:layout_alignLeft="@+id/button4"
         android:layout_alignStart="@+id/button4" />
@@ -29,7 +29,7 @@
         android:text="@string/d"
         android:id="@+id/button4"
         android:background="#ff9100"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
         android:layout_below="@+id/button3"
         android:layout_alignLeft="@+id/button17"
         android:layout_alignStart="@+id/button17" />

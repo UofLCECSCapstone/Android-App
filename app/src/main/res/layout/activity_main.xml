@@ -37,6 +37,7 @@
         android:id="@+id/button16"
         android:background="#ffd180"
         android:layout_alignBottom="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp" />
 
 </RelativeLayout>
