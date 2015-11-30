@@ -81,7 +81,11 @@ break;
 
             case R.id.button21:
             {
-                // open garage
+                try {
+                    website= new URI("https://192.168.1.84:8080/toggle_door?door_number=4");
+                } catch (URISyntaxException e) {
+                    e.printStackTrace();
+                }
                 break;
             }
 

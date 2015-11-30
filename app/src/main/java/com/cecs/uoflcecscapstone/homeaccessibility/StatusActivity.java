@@ -19,18 +19,13 @@ public class StatusActivity extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_status);
         httpStuff = (TextView) findViewById(R.id.textView2);
+        new LongOperation().execute("");
         b1 = (Button) findViewById(R.id.button13);
         b1.setOnClickListener(this);
-        new LongOperation().execute("");
 
     }
 
-    @Override
-    public void onClick(View v) {
-        if(v==b1)
-        {finish();
-        }
-    }
+
 
     private class LongOperation extends AsyncTask<String, Void, String> {
         @Override
@@ -53,6 +48,12 @@ public class StatusActivity extends Activity implements View.OnClickListener{
         @Override
         protected void onPostExecute(String result) {
             httpStuff.setText(result);
+        }
+    }
+    @Override
+    public void onClick(View v) {
+        if(v==b1)
+        {finish();
         }
     }
 }

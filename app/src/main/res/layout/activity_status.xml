@@ -21,5 +21,6 @@
         android:text="@string/b"
         android:id="@+id/button13"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#ffe0b2" />
 </RelativeLayout>
