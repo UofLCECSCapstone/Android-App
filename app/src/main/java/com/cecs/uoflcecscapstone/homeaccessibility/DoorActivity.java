@@ -13,50 +13,45 @@ import java.net.URISyntaxException;
  * Created by Drew on 10/20/2015.
  */
 public class DoorActivity extends Activity implements View.OnClickListener{
-    Button b1=null;
-    Button b2=null;
-    Button b3=null;
-    Button b4=null;
-    Button b5=null;
-    Button b6=null;
-    Button b7=null;
-    Button b8=null;
-    Button b9=null;
+    Button ToggleDoor1Button = null;
+    Button ToggleDoor2Button = null;
+    Button ToggleDoor3Button = null;
+    Button ToggleGarageDoorButton = null;
+    Button GetDoorStatusButton = null;
     static URI website;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_door);
-        b1=(Button) findViewById(R.id.button12);
-        b1.setOnClickListener(this);
-        b2=(Button) findViewById(R.id.button10);
-        b2.setOnClickListener(this);
-        b4=(Button) findViewById(R.id.button9);
-        b4.setOnClickListener(this);
-        b6=(Button) findViewById(R.id.button11);
-        b6.setOnClickListener(this);
-        b8=(Button) findViewById(R.id.button21);
-        b8.setOnClickListener(this);
-        b9=(Button) findViewById(R.id.button20);
-        b9.setOnClickListener(this);
+        GetDoorStatusButton = (Button) findViewById(R.id.getDoorStatusButton);
+        GetDoorStatusButton.setOnClickListener(this);
+        ToggleDoor1Button =(Button) findViewById(R.id.toggleDoor1Button);
+        ToggleDoor1Button.setOnClickListener(this);
+        ToggleDoor2Button = (Button) findViewById(R.id.toggleDoor2Button);
+        ToggleDoor2Button.setOnClickListener(this);
+        ToggleDoor3Button = (Button) findViewById(R.id.toggleDoor3Button);
+        ToggleDoor3Button.setOnClickListener(this);
+        ToggleGarageDoorButton = (Button) findViewById(R.id.toggleGarageDoorButton);
+        ToggleGarageDoorButton.setOnClickListener(this);
     }
 
     public void onClick(View v) {
         switch (v.getId())
         {
-            case R.id.button10:
+            case R.id.toggleDoor1Button:
             {
+                //  TODO Refactor this code to re-use the query, and just change the door number.
                 //door 1 open
                 try {
                     website= new URI("https://192.168.1.84:8080/toggle_door?door_number=1");
                 } catch (URISyntaxException e) {
                     e.printStackTrace();
                 }
-break;
+                break;
             }
 
-            case R.id.button9:
+            case R.id.toggleDoor2Button:
             {
                 try {
                     website= new URI("https://192.168.1.84:8080/toggle_door?door_number=2");
@@ -66,20 +61,17 @@ break;
                 break;
             }
 
-            case R.id.button11:
+            case R.id.toggleDoor3Button:
             {
                 try {
                     website= new URI("https://192.168.1.84:8080/toggle_door?door_number=3");
                 } catch (URISyntaxException e) {
                     e.printStackTrace();
-                }                break;
+                }
+                break;
             }
 
-
-
-
-
-            case R.id.button21:
+            case R.id.toggleGarageDoorButton:
             {
                 try {
                     website= new URI("https://192.168.1.84:8080/toggle_door?door_number=4");
@@ -89,7 +81,7 @@ break;
                 break;
             }
 
-            case R.id.button12:
+            case R.id.getDoorStatusButton:
             {
                 // get door status
                 try {
@@ -101,15 +93,15 @@ break;
                 break;
             }
 
-            case R.id.button20:
+            case R.id.backButton:
             {
                 // back
-finish();            }
+                finish();
+            }
 
 
         }
         Intent myIntent = new Intent(v.getContext(), StatusActivity.class);
         startActivity(myIntent);
-
     }
 }
