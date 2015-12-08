@@ -10,33 +10,33 @@ import android.widget.Button;
  * Created by Drew on 10/20/2015.
  */
 public class LightActivity extends Activity implements View.OnClickListener{
-    Button b1=null;
-    Button b2=null;
-    Button b3=null;
-    Button b4=null;
+    Button GetLightStatusButton = null;
+    Button LightOnButton = null;
+    Button LightOffButton = null;
+    Button BackButton = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_light);
-        b1=(Button) findViewById(R.id.button5);
-        b1.setOnClickListener(this);
-        b2=(Button) findViewById(R.id.button6);
-        b2.setOnClickListener(this);
-        b3=(Button) findViewById(R.id.button7);
-        b3.setOnClickListener(this);
-        b4=(Button) findViewById(R.id.button18);
-        b4.setOnClickListener(this);
+        GetLightStatusButton = (Button) findViewById(R.id.getLightStatusButton);
+        GetLightStatusButton.setOnClickListener(this);
+        LightOnButton = (Button) findViewById(R.id.lightOnButton);
+        LightOnButton.setOnClickListener(this);
+        LightOffButton = (Button) findViewById(R.id.lightOffButton);
+        LightOffButton.setOnClickListener(this);
+        BackButton = (Button) findViewById(R.id.backButton);
+        BackButton.setOnClickListener(this);
     }
 
     public void onClick(View v) {
-        if(v==b1)
+        if(v == GetLightStatusButton)
         {
         }
-        else if(v==b2)
+        else if(v == LightOnButton)
         {
         }
-        else if(v==b3)
+        else if(v == LightOffButton)
         {
         }
         else
