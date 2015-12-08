@@ -20,13 +20,13 @@ public class HomeActivity extends Activity implements View.OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        b1=(Button) findViewById(R.id.button2);
+        b1=(Button) findViewById(R.id.openLightsButton);
         b1.setOnClickListener(this);
-        b2=(Button) findViewById(R.id.button3);
+        b2=(Button) findViewById(R.id.openCameraButton);
         b2.setOnClickListener(this);
-        b3=(Button) findViewById(R.id.button4);
+        b3=(Button) findViewById(R.id.openDoorsButton);
         b3.setOnClickListener(this);
-        b4=(Button) findViewById(R.id.button17);
+        b4=(Button) findViewById(R.id.backButton);
         b4.setOnClickListener(this);
     }
     public void onClick(View v) {

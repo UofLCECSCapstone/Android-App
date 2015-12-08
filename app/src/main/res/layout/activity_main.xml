@@ -17,15 +17,16 @@
         android:id="@+id/startButton"
         android:background="#ffd180"
         android:layout_above="@+id/viEw1"
-        android:layout_alignLeft="@+id/button16"
-        android:layout_alignStart="@+id/button16" />
     <View
+        android:layout_alignLeft="@+id/quitButton"
+        android:layout_alignStart="@+id/quitButton"
+        android:layout_above="@+id/quitButton" />
+
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:id="@+id/viEw1"
         android:visibility="visible"
         android:background="@android:color/black"
-        android:layout_above="@+id/button16"
         android:layout_alignRight="@id/button"
         android:layout_alignLeft="@id/button"
         />

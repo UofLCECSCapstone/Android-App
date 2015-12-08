@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/l"
-        android:id="@+id/button2"
+        android:id="@+id/openLightsButton"
         android:background="#ff9100"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -16,28 +16,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/c"
-        android:id="@+id/button3"
+        android:id="@+id/openCameraButton"
         android:background="#ff9100"
         android:layout_marginTop="150dp"
-        android:layout_below="@+id/button2"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_alignStart="@+id/button4" />
+        android:layout_below="@+id/openLightsButton"
+        android:layout_alignLeft="@+id/openDoorsButton"
+        android:layout_alignStart="@+id/openDoorsButton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/d"
-        android:id="@+id/button4"
+        android:id="@+id/openDoorsButton"
         android:background="#ff9100"
         android:layout_marginTop="100dp"
-        android:layout_below="@+id/button3"
-        android:layout_alignLeft="@+id/button17"
-        android:layout_alignStart="@+id/button17" />
+        android:layout_below="@+id/openCameraButton"
+        android:layout_alignLeft="@+id/backButton"
+        android:layout_alignStart="@+id/backButton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button17"
+        android:id="@+id/backButton"
         android:text="@string/b"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
