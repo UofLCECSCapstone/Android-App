@@ -1,0 +1,17 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:defaultValue="192.168.1.84"
+        android:key="hub_IP_address"
+        android:summary="@string/pref_description_hub_IP_address"
+        android:title="@string/pref_title_hub_IP_address"
+        android:numeric="integer" />
+
+    <EditTextPreference
+        android:defaultValue="8080"
+        android:key="hub_IP_port"
+        android:summary="@string/pref_description_hub_IP_port"
+        android:title="@string/pref_title_hub_IP_port"
+        android:numeric="integer" />
+
+</PreferenceScreen>

@@ -18,5 +18,27 @@
     <string name="b">Back</string>
     <string name="la">Look At Camera</string>
     <string name="o">Open\n Garage</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example Networking settings -->
+    <string name="pref_header_network">Networking</string>
+
+    <string name="pref_title_hub_connection">Hub connection</string>
+    <string name="pref_description_hub_connection">
+        Controls how messages are sent to the hub over the network.
+    </string>
+
+    <string name="pref_title_hub_IP_address">Hub IP Address</string>
+    <string name="pref_description_hub_IP_address">
+        The IP address used to send messages to the Home Accessibility hub.
+    </string>
+
+    <string name="pref_title_hub_IP_port">Hub IP Port</string>
+    <string name="pref_description_hub_IP_port">
+        The IP port used to send messages to the Home Accessibility hub.
+    </string>
 
 </resources>
