@@ -11,6 +11,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button startButton = null;
     Button quitButton = null;
+    Button settingsButton = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startButton.setOnClickListener(this);
         quitButton =(Button) findViewById(R.id.quitButton);
         quitButton.setOnClickListener(this);
+        settingsButton = (Button) findViewById(R.id.settingsButton);
+        settingsButton.setOnClickListener(this);
     }
 
     @Override
@@ -47,8 +50,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if(v == startButton)
         {
-            Intent myIntent = new Intent(v.getContext(), HomeActivity.class);
-            startActivity(myIntent);
+            Intent homeIntent = new Intent(v.getContext(), HomeActivity.class);
+            startActivity(homeIntent);
+        }
+        else if (v == settingsButton)
+        {
+            Intent settingsIntent = new Intent(v.getContext(), SettingsActivity.class);
+            startActivity(settingsIntent);
         }
         else if (v == quitButton)
         {

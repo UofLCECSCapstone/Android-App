@@ -11,43 +11,43 @@ import android.widget.Button;
  * Created by Drew on 10/20/2015.
  */
 public class HomeActivity extends Activity implements View.OnClickListener{
-    Button b1=null;
-    Button b2=null;
-    Button b3=null;
-    Button b4=null;
+    Button OpenLightsButton = null;
+    Button OpenCameraButton = null;
+    Button OpenDoorsButton = null;
+    Button BackButton = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        b1=(Button) findViewById(R.id.openLightsButton);
-        b1.setOnClickListener(this);
-        b2=(Button) findViewById(R.id.openCameraButton);
-        b2.setOnClickListener(this);
-        b3=(Button) findViewById(R.id.openDoorsButton);
-        b3.setOnClickListener(this);
-        b4=(Button) findViewById(R.id.backButton);
-        b4.setOnClickListener(this);
+        OpenLightsButton =(Button) findViewById(R.id.openLightsButton);
+        OpenLightsButton.setOnClickListener(this);
+        OpenCameraButton =(Button) findViewById(R.id.openCameraButton);
+        OpenCameraButton.setOnClickListener(this);
+        OpenDoorsButton =(Button) findViewById(R.id.openDoorsButton);
+        OpenDoorsButton.setOnClickListener(this);
+        BackButton =(Button) findViewById(R.id.backButton);
+        BackButton.setOnClickListener(this);
     }
     public void onClick(View v) {
-if(v==b1)
-{
-    Intent myIntent=new Intent(v.getContext(),LightActivity.class);
-    startActivity(myIntent);
-}
-        else if(v==b2)
-{
-    Intent myIntent=new Intent(v.getContext(),CameraActivity.class);
-    startActivity(myIntent);
-}
-        else if(v==b3)
-{
-    Intent myIntent=new Intent(v.getContext(),DoorActivity.class);
-    startActivity(myIntent);
-}
+        if (v == OpenLightsButton)
+        {
+            Intent myIntent=new Intent(v.getContext(),LightActivity.class);
+            startActivity(myIntent);
+        }
+        else if (v == OpenCameraButton)
+        {
+            Intent myIntent=new Intent(v.getContext(),CameraActivity.class);
+            startActivity(myIntent);
+        }
+        else if (v == OpenDoorsButton)
+        {
+            Intent myIntent=new Intent(v.getContext(),DoorActivity.class);
+            startActivity(myIntent);
+        }
         else
-{
-    finish();
-}
+        {
+            finish();
+        }
     }
 }
